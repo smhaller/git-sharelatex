@@ -2,7 +2,7 @@
 
 This repo contains a python library to interact with a sharelatex server via git.
 
-The inital idea for this implementation was taken from 
+The inital idea and code for this implementation was taken from 
 [inria](https://gitlab.inria.fr/sed-rennes/sharelatex/python-sharelatex/).
 
 This version works with ldap-overleaf-sl and more general with sharelatex 3.0.1.
