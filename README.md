@@ -8,13 +8,15 @@ The inital idea and code for this implementation was taken from
 This version works with [ldap-overleaf-sl](https://github.com/smhaller/ldap-overleaf-sl) and more general with sharelatex 3.0.1.
 
 ## Installation
+```
 git clone https://github.com/smhaller/git-sharelatex
 cd git-sharelatex
 pip install [-e] .
-
+```
 ### On older systems
+```
 pip3 install [-e] .
-
+```
 
 ## Adaptations
 
