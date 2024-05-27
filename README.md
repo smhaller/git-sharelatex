@@ -20,6 +20,7 @@ pip3 install [-e] .
 
 ## Adaptations
 
+- works now with sharelatex version 4.x
 - works now default with the login of sharelatex (including some fixes and shortcuts)
 - added some os checks (keyring, files)
 - added missing dependencies
