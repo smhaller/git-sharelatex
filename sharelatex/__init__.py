@@ -642,7 +642,11 @@ class SyncClient:
         mime = filetype.guess(path)
         if not mime:
             mime = "text/plain"
-        files = {"qqfile": (filename, open(path, "rb"), mime)}
+            #mime = "application/octet-stream"
+        files = {
+          "qqfile": (filename, open(path, "rb"), mime),
+          "name": (None, filename),
+        }
         params = {
             "folder_id": folder_id,
             "_csrf": self.login_data["_csrf"],
@@ -727,7 +731,10 @@ class SyncClient:
         url = f"{self.base_url}/project/new/upload"
         filename = os.path.basename(path)
         mime = "application/zip"
-        files = {"qqfile": (filename, open(path, "rb"), mime)}
+        files = {
+          "qqfile": (filename, open(path, "rb"), mime),
+          "name": (None, filename),
+        }
         params = {
             "_csrf": self.login_data["_csrf"],
             "qquid": str(uuid.uuid4()),
